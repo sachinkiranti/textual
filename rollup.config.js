@@ -2,11 +2,11 @@ import babel from 'rollup-plugin-babel';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 
 export default {
-    input: 'dist/textual.js', // Starting point for bundling
+    input: 'build/textual.js', // Starting point for bundling
 
     // Output options for the generated bundle
     output: {
-        file: 'dist/textual-bundle.js',
+        file: 'build/textual-bundle.js',
         format: 'iife',
         sourcemap: true
     },

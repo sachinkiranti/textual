@@ -7,13 +7,13 @@
     "url": "https://github.com/sachinkiranti/textual.git"
   },
   "scripts": {
-    "clean": "rimraf dist && rimraf coverage",
+    "clean": "rimraf build && rimraf coverage",
     "build": "npm run compile && npm run copy:html && npm run bundle && npm run minify",
     "compile": "tsc",
     "copy:html": "cpx src/**.html dist",
     "test": "karma start",
     "bundle": "rollup -c",
-    "minify": "uglifyjs dist/textual-bundle.js --output dist/textual.min.js --source-map \"filename='dist/textual.min.js.map',url='textual.min.js.map',content='dist/textual.js.map'\""
+    "minify": "uglifyjs build/textual-bundle.js --output dist/textual.min.js"
   },
   "keywords": [],
   "author": "Sachin Kiranti <sachinkiranti@gmail.com>",
