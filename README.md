@@ -10,7 +10,7 @@ A simple text manipulation js library.
 
 ### CDN
 
-Link directly to Textual fileson [unpkg](https://unpkg.com).
+Link directly to Textual files on [unpkg](https://unpkg.com).
 
 
 ``` html
