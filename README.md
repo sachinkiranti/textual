@@ -6,7 +6,7 @@ A simple text manipulation js library.
 
 ### Download
 
-- [textual.min.js](https://unpkg.com/@sachinkiranti/textual@1.0.0/dist/textual.min.js)
+- [textual.min.js](https://unpkg.com/@sachinkiranti/textual@1.0.1/dist/textual.min.js)
 
 ### CDN
 
@@ -14,7 +14,7 @@ Link directly to Textual files on [unpkg](https://unpkg.com).
 
 
 ``` html
-<script src="https://unpkg.com/@sachinkiranti/textual@1.0.0/dist/textual.min.js"></script>
+<script src="https://unpkg.com/@sachinkiranti/textual@1.0.1/dist/textual.min.js"></script>
 ```
 
 ## Usage
