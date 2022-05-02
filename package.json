@@ -1,5 +1,5 @@
 {
-  "name": "textual",
+  "name": "@sachinkiranti/textual",
   "version": "1.0.0",
   "description": "Simple String manipulation library",
   "main": "dist/textual.min.js",
