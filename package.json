@@ -1,0 +1,45 @@
+{
+  "name": "textual",
+  "version": "1.0.0",
+  "description": "Simple String manipulation library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sachinkiranti/textual.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist && rimraf coverage",
+    "build": "npm run compile && npm run copy:html && npm run bundle && npm run minify",
+    "compile": "tsc",
+    "copy:html": "cpx src/**.html dist",
+    "test": "karma start",
+    "bundle": "rollup -c",
+    "minify": "uglifyjs dist/textual-bundle.js --output dist/textual.min.js --source-map \"filename='dist/textual.min.js.map',url='textual.min.js.map',content='dist/textual.js.map'\""
+  },
+  "keywords": [],
+  "author": "Sachin Kiranti <sachinkiranti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/plugin-external-helpers": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@types/jasmine": "^4.0.3",
+    "@types/jquery": "^3.5.14",
+    "cpx": "^1.5.0",
+    "jasmine-core": "^4.1.0",
+    "karma": "^6.3.19",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.0.0",
+    "karma-typescript": "^5.5.3",
+    "puppeteer": "^13.7.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.71.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "typescript": "^4.6.4",
+    "uglify-js": "^3.15.4"
+  }
+}

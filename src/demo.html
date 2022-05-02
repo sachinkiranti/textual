@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textual String Manipulation Demo</title>
+</head>
+<body>
+    <h1>Textual String Manipulation Demo</h1>
+    <p>Try the given button to count the words and characters for the given input.</p>
+
+    <textarea name="textStr" id="textStr" cols="30" rows="10"></textarea>
+    <br>
+    <span id="info-message"></span>
+    <div>
+        <button type="button" id="btn-count">Words Count</button>
+    </div>
+
+    <!-- Load jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./textual.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#btn-count').on('click', function () {
+                var strText = $('textarea[name=textStr]').val();
+                
+                $('#info-message').html(
+                    'The word count is : ' + strText.wordCount() +
+                    ' and the character count is : ' + strText.charCount()
+                )
+                
+            })
+        });
+    </script>
+</body>
+</html>
