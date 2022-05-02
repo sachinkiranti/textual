@@ -2,6 +2,7 @@
   "name": "textual",
   "version": "1.0.0",
   "description": "Simple String manipulation library",
+  "main": "dist/textual.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/sachinkiranti/textual.git"
@@ -16,8 +17,11 @@
     "minify": "uglifyjs build/textual-bundle.js --output dist/textual.min.js"
   },
   "keywords": [],
-  "author": "Sachin Kiranti <sachinkiranti@gmail.com>",
+  "author": "Sachin Kiranti <sachinkiranti@gmail.com> (https://raisachin.com.np/)",
   "license": "MIT",
+  "bugs": {    
+    "url": "https://github.com/sachinkiranti/textual/issues"  
+  },
   "dependencies": {
     "jquery": "^3.6.0"
   },
